@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podmf
+spec:
+  containers:
+    - name: ubuntu
+      image: ubuntu:18.04
+      command: ['sleep', 'inf']
+    - name: nginx
+      image: nginx
+    - name: alpine
+      image: alpine
+      ports:
+        - containerPort: 80
+
